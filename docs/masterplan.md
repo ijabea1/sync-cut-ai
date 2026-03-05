@@ -100,3 +100,69 @@ The system analyzes uploaded music to detect:
 - energy curves
 
 Example output:
+Chorus drop detected at 0:37
+Tempo detected: 120 BPM
+---
+
+## Video Scene Detection
+
+Video analysis detects timing cues such as:
+
+- scene cuts
+- motion intensity
+- pacing shifts
+
+Example:
+15 scene cuts detected across 20 seconds
+
+
+---
+
+## Smart Beat Alignment
+
+AI maps video events to music beats.
+
+Rules include:
+
+- cuts align with beats
+- key scenes align with drops
+- pacing follows rhythm
+
+Result: cinematic timing.
+
+---
+
+## Music Restructuring
+
+When song duration does not match video length, the system can:
+
+- trim intros
+- loop sections
+- shorten breakdowns
+- generate fade endings
+
+Outcome: perfectly matched duration.
+
+---
+
+## Timeline Editor
+
+Interactive timeline showing:
+
+- video preview
+- waveform
+- beat markers
+- scene cuts
+- sync markers
+
+Users can drag markers to fine-tune synchronization.
+
+---
+
+## One-Click Export
+
+Export options:
+
+- MP4 video with synced audio
+- WAV soundtrack
+- project file for editing tools
