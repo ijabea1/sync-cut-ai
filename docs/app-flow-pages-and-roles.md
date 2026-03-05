@@ -1,94 +1,151 @@
-app-flow-pages-and-roles.md
-Site Map
+# SyncCut AI — App Flow, Pages, and Roles
+
+# Site Map
 
 Top-level pages:
 
-Landing Page
+- Landing Page
+- Dashboard
+- Project Editor
+- Export Page
+- Settings
+- Account
 
-Dashboard
+---
 
-Project Editor
+# Page Purposes
 
-Export Page
+## Landing Page
 
-Settings
+Explains the product and allows sign-up.
 
-Account
+Sections:
 
-Purpose of Each Page
+- hero
+- product demo
+- features
+- testimonials
+- call to action
 
-Landing Page
-Explain the product and allow sign-up.
+---
 
-Dashboard
-Shows user projects.
+## Dashboard
 
-Project Editor
+Displays user projects.
+
+Features:
+
+- project cards
+- thumbnail previews
+- processing status
+- create project button
+
+---
+
+## Project Editor
+
 Main editing workspace.
 
-Export Page
-Download finished video.
+Layout:
 
-Settings
-Application preferences.
+Left: video preview  
+Bottom: timeline editor  
+Right: controls
 
-Account
-Manage billing and profile.
+Features:
 
-User Roles
-Creator
+- waveform
+- beat markers
+- scene markers
+- sync markers
+
+---
+
+## Export Page
+
+Allows users to export completed projects.
+
+Options:
+
+- MP4 export
+- WAV export
+- project file
+
+---
+
+## Settings
+
+Application preferences including:
+
+- export settings
+- upload limits
+- notification preferences
+
+---
+
+## Account
+
+Manage:
+
+- profile
+- billing
+- subscription plan
+
+---
+
+# User Roles
+
+## Creator
 
 Permissions:
 
-upload videos
+- upload videos
+- upload music
+- edit synchronization
+- export projects
 
-upload music
+---
 
-edit sync
+## Pro Creator
 
-export projects
+Additional features:
 
-Pro Creator
+- longer video uploads
+- faster processing
+- advanced editing tools
 
-Additional capabilities:
+---
 
-longer video uploads
-
-faster processing
-
-advanced editing tools
-
-Admin
+## Admin
 
 Permissions:
 
-manage users
+- manage users
+- monitor system usage
+- manage platform content
 
-monitor usage
+---
 
-manage platform content
+# Primary User Journeys
 
-Primary User Journeys
-Auto Sync Video
+## Auto Sync Video
 
-Upload video.
+1. Upload video
+2. Upload music
+3. AI generates synced preview
 
-Upload music track.
+---
 
-AI generates synced preview.
+## Adjust Sync
 
-Adjust Sync
+1. Open project editor
+2. Drag beat markers
+3. Preview changes
 
-Open project editor.
+---
 
-Adjust beat markers if needed.
+## Export Video
 
-Preview result.
-
-Export Video
-
-Click export.
-
-Choose format.
-
-Download synced video.
+1. Click export
+2. Select format
+3. Download video
