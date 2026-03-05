@@ -1,0 +1,131 @@
+# SyncCut AI — Conversation Bootstrap
+
+This file contains a short project summary that can be pasted at the beginning of a new ChatGPT conversation to restore context quickly.
+
+---
+
+## Project
+
+**SyncCut AI**
+
+An AI-powered video editing tool that automatically synchronizes music to video edits.
+
+Users upload a video and a music track. The system analyzes:
+
+* scene cuts
+* motion intensity
+* music beats
+* drops and tempo
+
+The system then aligns beats with visual moments to create **cinematic timing automatically**.
+
+---
+
+## Product Goal
+
+Make cinematic music timing automatic.
+
+Current workflow:
+
+Upload video → Upload music → AI analyzes → Automatic sync → Export final video.
+
+---
+
+## Tech Stack
+
+Frontend
+React + TypeScript + Tailwind + shadcn/ui
+
+Backend (planned)
+FastAPI + Python
+
+Media Processing
+FFmpeg
+
+Audio Analysis
+Librosa
+
+Video Analysis
+OpenCV + PySceneDetect
+
+Storage
+Lovable Cloud
+
+---
+
+## Current Project State
+
+The initial product interface has been generated using Lovable prompts.
+
+Implemented so far:
+
+* Landing page with animated waveform background
+* Dashboard with project management
+* Project creation flow
+* Project editor interface
+* Timeline editor UI
+* Marker system for beats and cuts
+* Functional buttons and UI interactions
+* Mock AI behavior for testing
+
+---
+
+## Prompts Already Executed
+
+1. **lovable-base-prompt.md**
+   Generated the base application structure.
+
+2. **mvp-build-prompt.md**
+   Built the MVP pages and core UI components.
+
+3. **timeline-editor-refinement.md**
+   Refined the timeline editor experience and interactions.
+
+---
+
+## Repository Structure
+
+sync-cut-ai
+
+docs/
+
+* masterplan.md
+* implementation-plan.md
+* design-guidelines.md
+* app-flow-pages-and-roles.md
+* conversation-bootstrap.md
+
+prompts/
+
+* lovable-base-prompt.md
+* mvp-build-prompt.md
+* timeline-editor-refinement.md
+
+---
+
+## Current Development Phase
+
+Preparing to implement a **mock analysis engine** before building the real AI pipeline.
+
+This will simulate:
+
+* beat detection
+* scene detection
+* sync mapping
+
+so the timeline editor can be fully tested before integrating real AI services.
+
+---
+
+## How to Use This File
+
+Start a new ChatGPT conversation and paste the contents of this file.
+
+Example:
+
+"Here is the context for my project:"
+[paste this file]
+
+Then ask the next development question.
+
+This allows the conversation to continue with full project context.
