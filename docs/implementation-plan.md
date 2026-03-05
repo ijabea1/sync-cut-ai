@@ -1,182 +1,156 @@
-Phase 1 — Foundation (Week 1–2)
+# SyncCut AI — Implementation Plan
 
-Goal: Upload → analyze → return sync results.
+## Development Phases
 
-Create project repo.
+The product will be developed in sequential phases.
 
-Initialize frontend (Next.js).
+---
 
-Initialize backend (FastAPI).
+# Phase 1 — Project Setup
 
-Set up cloud storage for uploads.
+Goals:
 
-Implement authentication.
-
-Micro-tasks:
-
-Create upload UI.
-
-Build API endpoint /upload/video.
-
-Build API endpoint /upload/music.
-
-Store files in cloud bucket.
-
-Save project record in database.
-
-Phase 2 — Video Analysis (Week 2–3)
-
-Goal: detect visual timing.
+- initialize frontend
+- initialize backend
+- configure storage
+- set up authentication
 
 Tasks:
 
-Integrate PySceneDetect.
+- create Git repository
+- initialize Next.js frontend
+- initialize FastAPI backend
+- configure database
+- connect cloud storage
 
-Extract scene cuts.
+---
 
-Analyze frame motion intensity.
+# Phase 2 — Upload System
 
-Generate visual pacing curve.
-
-Outputs:
-
-video_cuts = [2.3s, 5.1s, 7.6s]
-motion_peaks = [3.8s, 9.1s]
-
-Save results in analysis table.
-
-Phase 3 — Music Analysis (Week 3–4)
-
-Goal: detect beats and musical structure.
+Goal: reliable media uploads.
 
 Tasks:
 
-Integrate Librosa.
+- upload video
+- upload music
+- store files in cloud storage
+- create project records
 
-Detect beats.
+Example API endpoints:
 
-Detect tempo.
+POST /upload/video  
+POST /upload/music
 
-Detect energy curve.
+---
+
+# Phase 3 — Video Analysis
+
+Goal: detect timing cues.
+
+Steps:
+
+- extract frames
+- detect scene cuts
+- analyze motion
+- generate pacing curve
 
 Example output:
+video_cuts = [2.1, 4.7, 6.8]
+motion_peaks = [3.5, 7.2]
 
-beats = [0.4s, 0.8s, 1.2s, 1.6s]
+---
+
+# Phase 4 — Music Analysis
+
+Goal: detect musical structure.
+
+Steps:
+
+- load audio file
+- detect beats
+- detect tempo
+- calculate energy curve
+
+Example output:
+beats = [0.5,1.0,1.5,2.0]
 tempo = 120 BPM
-energy_curve = rising
 
-Store results in analysis database.
+---
 
-Phase 4 — Sync Algorithm (Week 4–5)
+# Phase 5 — Sync Algorithm
 
-Goal: match video cuts to beats.
+Goal: align video events with music beats.
 
-Algorithm logic:
+Process:
 
-Align first major cut to first beat.
-
-Map scene cuts to nearest beats.
-
-Prioritize beat drops for big scenes.
-
-Shift music start position if needed.
-
-Output:
-
-sync_map = [
-cut 2.3s -> beat 2.2s
-cut 5.1s -> beat 5.0s
-cut 7.6s -> beat 7.5s
-]
-Phase 5 — Music Restructuring (Week 5–6)
-
-Goal: ensure song matches video length.
-
-Options:
-
-trim intro
-
-loop instrumental section
-
-fade ending
+- map scene cuts to nearest beats
+- prioritize high-motion scenes
+- generate synchronization map
 
 Example:
+cut 2.1s → beat 2.0s
+cut 4.7s → beat 4.8s
 
-video length = 30s
-music length = 3m
 
-solution:
-use 10s intro
-loop 8s section
-use drop
-fade outro
-Phase 6 — Timeline UI (Week 6–7)
+---
 
-Build visual editing interface.
+# Phase 6 — Music Adjustment
 
-Components:
+Goal: match music duration to video duration.
 
-video preview
+Methods:
 
-music waveform
+- trimming
+- looping segments
+- fade endings
 
-beat markers
+Example:
+Video: 30 seconds
+Music: 3 minutes
 
-scene markers
+Solution:
+intro + loop + outro
 
-sync lines
+---
 
-User actions:
+# Phase 7 — Timeline Editor
 
-drag beat alignment
+UI components:
 
-trim start/end
+- video preview
+- waveform display
+- beat markers
+- scene markers
 
-preview result
+User interactions:
 
-Phase 7 — Export Engine (Week 7–8)
+- drag markers
+- trim start/end
+- preview playback
 
-Tasks:
+---
 
-Merge synced music and video.
-
-Encode output using FFmpeg.
-
-Generate downloadable export.
-
-Export options:
-
-MP4 video
-
-WAV music track
-
-project file
-
-Phase 8 — Performance Optimization (Week 8–9)
+# Phase 8 — Export Engine
 
 Tasks:
 
-background processing queue
+- combine video and synced audio
+- encode video
+- generate downloadable export
 
-GPU workers
+Formats:
 
-caching analysis results
+- MP4
+- WAV
+- project file
 
-streaming previews
+---
 
-Timeline With Checkpoints
+# Phase 9 — Optimization
 
-Week 2
-✔ Upload system working
+Improve performance:
 
-Week 4
-✔ Video + music analysis working
-
-Week 6
-✔ AI sync functioning
-
-Week 7
-✔ Timeline UI built
-
-Week 9
-✔ Export pipeline complete
+- background processing
+- queue workers
+- caching analysis results
+- streaming previews
