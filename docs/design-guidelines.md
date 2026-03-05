@@ -1,219 +1,125 @@
-Emotional Tone
+# SyncCut AI — Design Guidelines
 
-Feels like a calm cinematic editing studio — focused, creative, and effortless.
+## Emotional Tone
 
-The interface should make creators feel in control, inspired, and supported, not overwhelmed. Kindness in design means removing friction while respecting the user’s attention and emotional state.
+The interface should feel like a **calm cinematic editing studio**.
 
-Typography
+Users should feel:
 
-Primary typeface:
+- focused
+- creative
+- supported
+
+The interface must remove friction while preserving creative control.
+
+---
+
+# Typography
+
+Primary Typeface:
 
 Inter
 
-Reasons:
-
-excellent readability
-
-widely used in professional tools
-
-works well in dense UI layouts
-
 Hierarchy:
 
-Level	Size	Weight
-H1	40px	700
-H2	28px	600
-H3	22px	600
-H4	18px	500
-Body	16px	400
-Caption	13px	400
+| Level | Size | Weight |
+|------|------|------|
+| H1 | 40px | 700 |
+| H2 | 28px | 600 |
+| H3 | 22px | 600 |
+| Body | 16px | 400 |
+| Caption | 13px | 400 |
 
-Line height: 1.6
+Line height:
 
-Color System
+1.6
 
-Mood:
+---
 
-cinematic
+# Color System
 
-focused
-
-modern
-
-Primary
-
+Primary  
 #6C5CE7
-RGB(108,92,231)
 
-Secondary
-
-#2D3436
-RGB(45,52,54)
-
-Background
-
-#0F1115
-RGB(15,17,21)
-
-Accent (beats and sync markers)
-
+Accent  
 #00E5FF
-RGB(0,229,255)
 
-Success
+Background  
+#0F1115
 
+Secondary  
+#2D3436
+
+Success  
 #00D084
 
-Error
-
+Error  
 #FF5A5F
 
-All colors meet WCAG AA+ contrast requirements.
+All colors meet WCAG AA accessibility standards.
 
-Spacing & Layout
+---
 
-Spacing system: 8pt grid
+# Layout & Spacing
 
-Values:
+Spacing system:
 
-spacing	value
-XS	8px
-SM	16px
-MD	24px
-LG	32px
-XL	48px
+8pt grid.
+
+Spacing scale:
+
+8px  
+16px  
+24px  
+32px  
+48px
 
 Layout principles:
 
-single central workspace
+- single central workspace
+- large timeline area
+- minimal visual clutter
 
-large timeline area
+---
 
-minimal interface clutter
-
-Motion & Interaction
+# Motion & Interaction
 
 Motion style:
 
-smooth, subtle, cinematic
+smooth and cinematic.
 
 Durations:
 
-hover → 150ms
-
-modal → 220ms
-
-timeline drag → 200ms
+Hover → 150ms  
+Modal → 220ms  
+Timeline drag → 200ms
 
 Examples:
 
-Hover:
+- buttons lift slightly on hover
+- markers snap to beats
+- waveform pulses during processing
 
-button lifts slightly
+---
 
-soft glow
+# Voice & Tone
 
-Timeline:
+Tone:
 
-markers snap to beats
-
-Processing:
-
-waveform pulses while analyzing
-
-Voice & Tone
-
-Personality:
-
-confident
-
-friendly
-
-encouraging
+- confident
+- friendly
+- encouraging
 
 Examples:
 
-Onboarding
-“Upload your video. We’ll handle the timing.”
+Onboarding:
 
-Success
-“Perfect sync achieved.”
+Upload your video. We'll handle the timing.
 
-Error
-“Something didn’t work. Let’s try again.”
+Success:
 
-System Consistency
+Perfect sync achieved.
 
-Design inspirations:
+Error:
 
-Linear
-
-Apple editing tools
-
-DaVinci Resolve
-
-Recurring patterns:
-
-dark workspace
-
-glowing beat markers
-
-minimal controls
-
-Accessibility
-
-Requirements:
-
-keyboard navigation
-
-ARIA labels
-
-visible focus states
-
-color contrast AA+
-
-Emotional Audit Checklist
-
-Before shipping:
-
-Does the interface feel calm?
-
-Are animations supportive?
-
-Do errors guide instead of blame?
-
-Products that respect emotional experience build deeper trust with users.
-
-Design Snapshot
-
-Color Palette
-
-Primary: #6C5CE7
-Accent: #00E5FF
-Background: #0F1115
-Secondary: #2D3436
-Success: #00D084
-Error: #FF5A5F
-
-Typography Scale
-
-Element	Size
-H1	40px
-H2	28px
-H3	22px
-Body	16px
-Caption	13px
-
-Spacing
-
-8 / 16 / 24 / 32 / 48
-
-Emotional Thesis
-
-A calm creative studio where video and music naturally align.
-
-Design Integrity Review
-
-The visual system supports focus and creativity. The dark cinematic workspace highlights the timeline and music structure without distraction.
-
-Suggested improvement: add subtle audio-reactive UI effects that visually respond to beats.
+Something didn't work. Let's try again.
