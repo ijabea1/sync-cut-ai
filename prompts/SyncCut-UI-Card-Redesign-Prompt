@@ -1,0 +1,135 @@
+# SyncCut UI Card Redesign Prompt
+
+## Objective
+Redesign the project cards to use a **modern SaaS feature-card style**.
+
+The cards should feel **clean, modern, interactive, and premium**, similar to feature cards used in modern AI SaaS products and developer tools.
+
+---
+
+# Card Design
+
+Each card should include:
+
+- A **subtle dark gradient background** (dark gray with soft purple/teal gradient accents)
+- **Rounded corners** (18px border radius)
+- **Soft shadow for depth**
+- A **faint border** separating the card from the background
+
+Example styling:
+
+background: #14141a  
+border: 1px solid rgba(255,255,255,0.05)  
+box-shadow: 0 8px 30px rgba(0,0,0,0.4)
+
+---
+
+# Visual Depth
+
+Increase the **visual depth of the interface** so cards appear elevated above the page background.
+
+Use a layered color structure:
+
+| Layer | Color |
+|------|------|
+| Page Background | #0b0b0f |
+| Card Surface | #14141a |
+| Hover State | #1b1b23 |
+
+This layered contrast prevents the UI from feeling flat and improves hierarchy.
+
+---
+
+# Card Content Layout
+
+Inside the card:
+
+### Top Left
+A **small rounded-square icon container** with a light background.
+
+### Title
+A **bold title** representing the project name.
+
+### Description
+A **short description** in muted gray text.
+
+---
+
+# Spacing
+
+Use generous spacing to keep the UI clean.
+
+Recommended:
+
+- **Padding:** 24–28px
+- Comfortable vertical spacing between elements
+
+Structure example:
+
+Icon  
+
+Title  
+
+Description  
+
+---
+
+# Card Hover Interaction
+
+Add micro-interactions when a user hovers over a card.
+
+On hover:
+
+- Card lifts slightly
+- Shadow increases
+- Border becomes slightly brighter
+- Background becomes slightly lighter
+
+Example animation:
+
+transform: translateY(-4px)  
+transition: all 0.2s ease
+
+These hover interactions should feel **smooth and subtle**, similar to modern AI SaaS interfaces.
+
+---
+
+# Status Indicator Improvements
+
+Replace plain status text with **visual status chips** so project states are instantly recognizable.
+
+Statuses should appear as **pill-shaped badges**.
+
+| Status | Color |
+|------|------|
+| Synced | Green |
+| Processing | Blue |
+| Exported | Purple |
+| Draft | Gray |
+
+Example chip styling:
+
+padding: 4px 10px  
+border-radius: 999px  
+font-size: 12px  
+
+Example color treatment:
+
+background: rgba(0,255,150,0.1)  
+border: 1px solid rgba(0,255,150,0.2)
+
+This allows users to **quickly scan project states without reading text carefully**.
+
+---
+
+# Design Goal
+
+The overall UI should feel:
+
+- modern
+- premium
+- interactive
+- clean
+- visually layered
+
+The cards should resemble **feature cards used in modern AI SaaS platforms and developer tools.**
