@@ -133,3 +133,144 @@ The overall UI should feel:
 - visually layered
 
 The cards should resemble **feature cards used in modern AI SaaS platforms and developer tools.**
+
+# Important Instruction
+
+Do NOT redesign the page layout.
+
+Do NOT change navigation, section order, text content, or page structure.
+
+Only update the **existing cards** inside these two sections:
+
+- How It Works
+- Features
+
+Preserve all existing functionality, layout, icons, and copy.
+
+This should be a **visual card restyle only** for those sections.
+
+---
+
+# Objective
+
+Update the cards in the **How It Works** and **Features** sections so they feel more visually distinct, more premium, and more polished than they do now.
+
+The main goal is to improve the **card colors, hues, depth, and hover states** while keeping the current section structure intact.
+
+These cards should use color palettes that contrast well with the rest of the page and do **not** rely on the same purple/teal treatment currently used elsewhere.
+
+---
+
+# Features Section Card Update
+
+Restyle the existing cards in the **Features** section with a **cool indigo / electric blue** color system.
+
+Use these tones:
+
+- Indigo: `#5B5BD6`
+- Electric Blue: `#3FA9FF`
+- Deep Navy Accent: `#0F1C2E`
+
+Apply a subtle dark gradient background with cool blue lighting.
+
+Example gradient treatment:
+
+`linear-gradient(120deg, rgba(91,91,214,0.18), rgba(63,169,255,0.14))`
+
+Card surface should remain dark, but slightly tinted:
+
+- base card background: `#0f1117`
+
+The visual effect should feel:
+
+- technical
+- futuristic
+- clean
+- modern
+
+Do not make the colors overly bright.
+Keep them premium and subdued.
+
+---
+
+# How It Works Section Card Update
+
+Restyle the existing cards in the **How It Works** section with a **warm amber / gold** color system to create contrast against the cooler sections.
+
+Use these tones:
+
+- Amber: `#FFB347`
+- Soft Gold: `#FFD27A`
+- Burnt Orange Accent: `#FF8C42`
+
+Apply a subtle dark gradient background with warm lighting.
+
+Example gradient treatment:
+
+`linear-gradient(120deg, rgba(255,179,71,0.18), rgba(255,140,66,0.14))`
+
+Card surface should remain dark, but slightly warm tinted:
+
+- base card background: `#14110f`
+
+The visual effect should feel:
+
+- clear
+- explanatory
+- warm
+- premium
+
+---
+
+# Card Styling for Both Sections
+
+Apply these updates to the existing cards in both sections:
+
+- rounded corners: `18px`
+- subtle border: `1px solid rgba(255,255,255,0.05)`
+- deeper shadow: `0 8px 30px rgba(0,0,0,0.4)`
+- increase visual depth so cards feel elevated from the page background
+- maintain existing icon placement and text hierarchy
+- keep the current card content and structure exactly the same
+
+The new card colors and hues should be **clearly visible** and noticeably different from the current monochrome styling.
+
+---
+
+# Hover State
+
+Add a subtle hover interaction to the cards in both sections.
+
+On hover:
+
+- slightly lift the card
+- brighten the gradient glow
+- slightly strengthen the shadow
+- make the border a bit brighter
+
+Use:
+
+- `transform: translateY(-3px)`
+- `transition: all 0.2s ease`
+
+The hover state should feel smooth and modern.
+
+---
+
+# Design Goal
+
+The updated cards should feel:
+
+- more premium
+- more layered
+- more visually distinct
+- more polished
+
+Final visual direction:
+
+- **Features cards** = cool indigo / electric blue
+- **How It Works cards** = warm amber / gold
+
+Do not regenerate these sections.
+Do not create a new layout.
+Only restyle the existing cards in these two sections.
